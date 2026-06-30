@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+#tudo{
+    width: 900px;
+    max-width: 95%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    text-align: center;
+}
+
+/* H1 ESTILIZADO */
+h1{
+    font-size: 28px;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+h1::after{
+    content: "";
+    width: 80px;
+    height: 3px;
+    background: #2563eb;
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 10px;
+}
+
+/* INPUTS */
+input,
+select{
+    padding: 8px 10px;
+    border: 2px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 4px;
+    outline: none;
+}
+
+input:focus,
+select:focus{
+    border-color: #2563eb;
+}
+
+/* NOME */
+#nome{
+    width: 60%;
+}
+
+/* PAÍSES */
+#pais1,
+#pais2{
+    width: 220px;
+}
+
+/* PLACAR */
+#palpite1,
+#palpite2{
+    width: 55px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* X */
+span{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+/* BOTÃO PALPITAR MAIOR E MAIS BONITO */
+button{
+    margin-top: 12px;
+    padding: 12px 150px; /* MAIS LARGO */
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .2s;
+}
+
+button:hover{
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* TABELA ARREDONDADA */
+table{
+    width: 100%;
+    margin-top: 18px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+/* CABEÇALHO */
+th{
+    background: #1e3a8a;
+    color: #fff;
+    padding: 12px;
+}
+
+/* CÉLULAS */
+td{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* LINHAS */
+tr:nth-child(even){
+    background: #f8fafc;
+}
+
+/* BOTÕES EDITAR / EXCLUIR */
+td button{
+    padding: 6px 12px;
+    margin: 0 5px; /* MAIS ESPAÇO ENTRE ELES */
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+/* EDITAR */
+td button:first-child{
+    background: #f59e0b;
+}
+
+/* EXCLUIR */
+td button:last-child{
+    background: #ef4444;
+}
