@@ -6,8 +6,8 @@ app.use(express.json());
 let palpites = [
     {
         id : 1, 
-        palpitea : {pais : "brasil", palpite : 3},
-        palpiteb : {pais : "noruega", palpite : 1}, 
+        palpitea : {pais : "Brasil", palpite : 3},
+        palpiteb : {pais : "Noruega", palpite : 1}, 
         participante: "Cauan"
     }
 ];
@@ -52,7 +52,7 @@ app.put("/palpites/:id", (req,res) => {
     palpite.palpitea.pais    = req.body.palpitea.pais;
     palpite.palpitea.palpite = req.body.palpitea.palpite;
     palpite.palpiteb.pais    = req.body.palpiteb.pais;
-    palpite.palpitea.palpite = req.body.palpiteb.palpite;
+    palpite.palpiteb.palpite = req.body.palpiteb.palpite;
     palpite.participante     = req.body.participante;
 
     res.status(200).json(palpite);
